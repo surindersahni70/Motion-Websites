@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>document.documentElement.classList.add('js');</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AURA — Digital Design Studio</title>
+<meta name="description" content="AURA is a digital design studio crafting bold brands, immersive websites, and motion-driven product experiences.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- Ambient background blobs -->
+<div class="bg-scene" aria-hidden="true">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <div class="grain"></div>
+</div>
+
+<header class="site-header">
+  <nav class="glass nav-glass" aria-label="Primary">
+    <a href="#top" class="logo">
+      <span class="logo-mark" aria-hidden="true"></span>
+      AURA
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact" class="nav-cta">Start a project</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow reveal-up">
+          <span class="dot" aria-hidden="true"></span>
+          Design &amp; Development Studio
+        </p>
+        <h1 class="hero-title" id="heroTitle">
+          <span class="line">We craft digital</span>
+          <span class="line">experiences that</span>
+          <span class="line"><em>move</em> people.</span>
+        </h1>
+        <p class="hero-sub reveal-up">
+          AURA partners with ambitious brands to design and build websites, products,
+          and interactions that feel alive — glassy, fluid, and unmistakably modern.
+        </p>
+        <div class="hero-actions reveal-up">
+          <a href="#contact" class="btn btn-primary">
+            Start a project
+            <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#work" class="btn btn-ghost">
+            View our work
+          </a>
+        </div>
+
+        <dl class="hero-stats reveal-up">
+          <div><dt>120+</dt><dd>Projects shipped</dd></div>
+          <div><dt>98%</dt><dd>Client retention</dd></div>
+          <div><dt>14</dt><dd>Design awards</dd></div>
+        </dl>
+      </div>
+
+      <div class="hero-visual">
+        <div class="glass hero-card hero-card-main">
+          <div class="hero-card-top">
+            <div class="traffic-lights" aria-hidden="true"><span></span><span></span><span></span></div>
+            <span class="hero-card-tag">Live preview</span>
+          </div>
+          <div class="hero-card-bars">
+            <span style="--h:38%"></span>
+            <span style="--h:64%"></span>
+            <span style="--h:52%"></span>
+            <span style="--h:82%"></span>
+            <span style="--h:46%"></span>
+            <span style="--h:70%"></span>
+          </div>
+          <div class="hero-card-footer">
+            <span>Conversion rate</span>
+            <strong>+64%</strong>
+          </div>
+        </div>
+        <div class="glass hero-card hero-card-float">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <div>
+            <strong>Motion Design</strong>
+            <span>Built with GSAP</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="scroll-cue" id="scrollCue" aria-label="Scroll to next section">
+      <span></span>
+    </button>
+  </section>
+
+  <!-- LOGO STRIP -->
+  <section class="logo-strip" aria-label="Trusted by">
+    <div class="container">
+      <p class="logo-strip-label">Trusted by product &amp; growth teams at</p>
+      <div class="logo-row reveal-up">
+        <span>NORTHWIND</span>
+        <span>VERTEX</span>
+        <span>HALO LABS</span>
+        <span>ORBITAL</span>
+        <span>KINDLE&amp;CO</span>
+        <span>PRISMA</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <header class="section-head">
+        <p class="eyebrow reveal-up"><span class="dot" aria-hidden="true"></span>Services</p>
+        <h2 class="reveal-up">Everything you need to launch and grow</h2>
+        <p class="section-sub reveal-up">From first sketch to shipped product — one team, one system, zero handoff friction.</p>
+      </header>
+
+      <div class="service-grid">
+        <article class="glass service-card reveal-up">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 9h18" stroke="currentColor" stroke-width="1.8"/><circle cx="6.5" cy="6.5" r=".75" fill="currentColor"/><circle cx="9" cy="6.5" r=".75" fill="currentColor"/></svg>
+          </div>
+          <h3>Web Design</h3>
+          <p>Distinct, conversion-minded interfaces backed by a real design system — not a template.</p>
+          <a href="#contact" class="card-link">Learn more <svg class="icon-sm" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </article>
+
+        <article class="glass service-card reveal-up">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 17l6-6-6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 19h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Product Development</h3>
+          <p>Production-grade front-end engineering with performance and accessibility built in from day one.</p>
+          <a href="#contact" class="card-link">Learn more <svg class="icon-sm" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </article>
+
+        <article class="glass service-card reveal-up">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.8"/><path d="M12 8v4l2.5 2.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Motion &amp; Interaction</h3>
+          <p>Scroll-driven storytelling, micro-interactions, and page transitions that feel intentional, never gimmicky.</p>
+          <a href="#contact" class="card-link">Learn more <svg class="icon-sm" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </article>
+
+        <article class="glass service-card reveal-up">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 20l4.2-4.2M4 20v-5m0 5h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 4l-4.2 4.2M20 4v5m0-5h-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Brand Identity</h3>
+          <p>Naming, visual systems, and voice guidelines that hold up across every future touchpoint.</p>
+          <a href="#contact" class="card-link">Learn more <svg class="icon-sm" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="work" id="work">
+    <div class="container">
+      <header class="section-head">
+        <p class="eyebrow reveal-up"><span class="dot" aria-hidden="true"></span>Selected work</p>
+        <h2 class="reveal-up">Recent projects we're proud of</h2>
+        <p class="section-sub reveal-up">A small sample of the brands and products we've shipped in the last year.</p>
+      </header>
+
+      <div class="work-grid">
+        <a class="work-card reveal-up work-card-lg" href="#contact">
+          <div class="work-media work-media-1"></div>
+          <div class="glass work-info">
+            <div>
+              <span class="work-tag">Fintech · Web App</span>
+              <h3>Northwind Capital</h3>
+            </div>
+            <span class="work-arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+        </a>
+
+        <a class="work-card reveal-up" href="#contact">
+          <div class="work-media work-media-2"></div>
+          <div class="glass work-info">
+            <div>
+              <span class="work-tag">E-commerce</span>
+              <h3>Halo Labs</h3>
+            </div>
+            <span class="work-arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+        </a>
+
+        <a class="work-card reveal-up" href="#contact">
+          <div class="work-media work-media-3"></div>
+          <div class="glass work-info">
+            <div>
+              <span class="work-tag">SaaS Dashboard</span>
+              <h3>Orbital Analytics</h3>
+            </div>
+            <span class="work-arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+        </a>
+
+        <a class="work-card reveal-up" href="#contact">
+          <div class="work-media work-media-4"></div>
+          <div class="glass work-info">
+            <div>
+              <span class="work-tag">Brand + Web</span>
+              <h3>Prisma Studio</h3>
+            </div>
+            <span class="work-arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <div class="container">
+      <header class="section-head">
+        <p class="eyebrow reveal-up"><span class="dot" aria-hidden="true"></span>Process</p>
+        <h2 class="reveal-up">How we work together</h2>
+        <p class="section-sub reveal-up">A tight, transparent process built to keep momentum from kickoff to launch.</p>
+      </header>
+
+      <ol class="process-list">
+        <li class="glass process-step reveal-up">
+          <span class="process-num">01</span>
+          <h3>Discover</h3>
+          <p>We dig into your users, market, and goals to define what success actually looks like.</p>
+        </li>
+        <li class="glass process-step reveal-up">
+          <span class="process-num">02</span>
+          <h3>Design</h3>
+          <p>Rapid, high-fidelity exploration in the browser — so what you approve is what ships.</p>
+        </li>
+        <li class="glass process-step reveal-up">
+          <span class="process-num">03</span>
+          <h3>Build</h3>
+          <p>Clean, performant code with motion and accessibility considered at every step.</p>
+        </li>
+        <li class="glass process-step reveal-up">
+          <span class="process-num">04</span>
+          <h3>Launch</h3>
+          <p>QA, performance passes, and a handoff that sets your team up to keep moving fast.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <header class="section-head">
+        <p class="eyebrow reveal-up"><span class="dot" aria-hidden="true"></span>Testimonials</p>
+        <h2 class="reveal-up">What our clients say</h2>
+      </header>
+
+      <div class="testimonial-grid">
+        <blockquote class="glass testimonial-card reveal-up">
+          <p>&ldquo;AURA rebuilt our entire web presence in six weeks. The motion work alone lifted our demo-to-signup rate by 40%.&rdquo;</p>
+          <footer>
+            <span class="avatar" aria-hidden="true">JM</span>
+            <div><cite>Jordan Marsh</cite><span>VP Growth, Northwind Capital</span></div>
+          </footer>
+        </blockquote>
+
+        <blockquote class="glass testimonial-card reveal-up">
+          <p>&ldquo;The most senior, opinionated design team we've worked with. They pushed back when it mattered and it made the product better.&rdquo;</p>
+          <footer>
+            <span class="avatar" aria-hidden="true">RK</span>
+            <div><cite>Riya Kapoor</cite><span>Founder, Halo Labs</span></div>
+          </footer>
+        </blockquote>
+
+        <blockquote class="glass testimonial-card reveal-up">
+          <p>&ldquo;Genuinely fast turnaround without sacrificing craft. Every interaction on the new site feels intentional.&rdquo;</p>
+          <footer>
+            <span class="avatar" aria-hidden="true">DT</span>
+            <div><cite>Daniel Torres</cite><span>Head of Product, Orbital</span></div>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="contact">
+    <div class="container">
+      <div class="glass cta-card reveal-up">
+        <h2>Have a project in mind?</h2>
+        <p>Tell us where you're headed — we'll tell you how to get there faster.</p>
+        <form class="cta-form" id="ctaForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Work email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+            <p class="field-error" id="emailError" role="alert" hidden>Please enter a valid email address.</p>
+          </div>
+          <div class="field field-full">
+            <label for="message">Project details</label>
+            <textarea id="message" name="message" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary field-full">
+            Send message
+            <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="#top" class="logo"><span class="logo-mark" aria-hidden="true"></span>AURA</a>
+      <p>Digital design studio for ambitious brands.</p>
+    </div>
+    <nav aria-label="Footer">
+      <h4>Studio</h4>
+      <ul>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#process">Process</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Social">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="#">Twitter / X</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h4>Studio hours</h4>
+      <p>Mon–Fri, 9am–6pm EST<br><a href="mailto:hello@aura.studio">hello@aura.studio</a></p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; 2026 AURA Studio. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/vendor/gsap.min.js"></script>
+<script src="js/vendor/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
